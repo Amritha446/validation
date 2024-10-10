@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+<link href="css\form.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+<body>
+<div class="row">
+<div class="col-3"></div>
+<div class="col-6">
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Registration Form</h2>
+    <form id="registrationForm" class="needsValidation" novalidate>
+     
+        <div class="col-md-6">
+          <label for="name" class="formLabel col-5">Name</label>
+          <input type="text" class="formControl col-5" id="name" required>
+          <div class="error" id="nameError"></div>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="formLabel col-5">Email</label>
+          <input type="email" class="formControl col-5" id="email" required>
+          <div class="error" id="emailError"></div>
+        </div>
+   
+              <div class="col-md-6">
+          <label for="password" class="formLabel col-5">Password</label>
+          <input type="password" class="formControl col-5" id="password" required>
+          <div class="error" id="passwordError"></div>
+        </div>
+        <div class="col-md-6">
+          <label for="confirmPassword" class="formLabel col-5">Confirm Password</label>
+          <input type="password" class="formControl col-5" id="confirmPassword" required>
+          <div class="error" id="confirmPasswordError"></div>
+        </div>
+            <div class="mb-3">
+        <label for="phone" class="formLabel col-5">Phone</label>
+        <input type="tel" class="formControl col-5" id="phone" required>
+        <div class="error" id="phoneError"></div>
+      </div>
+      <div class="mb-3">
+        <label for="dob" class="formLabel col-5">Date of Birth</label>
+        <input type="date" class="formControl col-5" id="dob" required>
+        <div class="error" id="dobError"></div>
+      </div>
+      <div class="mb-3">
+        <label for="age" class="formLabel col-5">Age</label>
+        <input type="number" class="formControl col-5" id="age" min="18" max="100" required>
+        <div class="error" id="ageError"></div>
+      </div>
+      <div class="mb-3">
+        <label class="formLabel col-5">Gender</label>
+        <div>
+          <input type="radio" name="gender" value="male" id="male" required> Male
+          <input type="radio" name="gender" value="female" id="female" required> Female
+        </div>
+        <div class="error" id="genderError"></div>
+      </div>
+      <div class="mb-3">
+        <label for="website" class="formLabel col-5">Website</label>
+        <input type="url" class="formControl col-5" id="website" required>
+        <div class="error" id="websiteError"></div>
+      </div>
+      <div class="mb-3">
+        <label for="country" class="formLabel col-5">Country</label>
+        <select class="formSelect col-5" id="country" required>
+          <option value="">Select Country</option>
+          <option value="UAE">UAE</option>
+          <option value="India">India</option>
+          <option value="Finland">Finland</option>
+        </select>
+        <div class="error" id="countryError"></div>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="formLabel col-5">Message</label>
+        <textarea class="formControl col-5" id="message" rows="3" required></textarea>
+        <div class="error" id="messageError"></div>
+      </div>
+      <div class="form-check mb-3">
+        <input type="checkbox" class="formCheckInput" id="terms" required>
+        <label for="terms" class="formCheckLabel">I agree to the terms and conditions</label>
+        <div class="error" id="termsError"></div>
+      </div>
+      <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+  </div>
+</div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
