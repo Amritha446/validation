@@ -1,23 +1,9 @@
-body{
+.error {
+	color: red;
+	font-size: 0.9em;
+    }
+.container{
+	background-color:white;
 	margin:0;
-	padding:0;
-}
-.error{
-         color:red;
-         font-size:0.9em; 
-}
-.form{
-	border:1px solid black;
-	background-image:url("https://static.vecteezy.com/system/resources/thumbnails/020/525/157/small/abstract-background-design-background-texture-design-with-abstract-style-creative-illustration-for-advertising-posters-business-cards-flyers-websites-banners-covers-landings-pages-etc-vector.jpg");
-}
-.formControl{
-	border-style:ridge;
-	border:1px solid black;
-}
-.formControl:hover{
-	border:2px solid blue;
-}
-.formCheckInput{
-	height:13px;
-	width:13px;
+	paddong:0;
 }
